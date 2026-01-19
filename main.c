@@ -7,7 +7,7 @@
 #include <signal.h>
 #include <string.h>
 
-#include "include/all.h"
+#include "lib/all.h"
 
 #define TARGET_MAX_SIZE 1024
 

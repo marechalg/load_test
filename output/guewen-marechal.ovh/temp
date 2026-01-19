@@ -1,8 +1,8 @@
-Running 30s test @ http://guewen-marechal.ovh:8080
-  4 threads and 100 connections
+Running 4s test @ http://guewen-marechal.ovh:8080
+  4 threads and 4 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    27.89ms   14.79ms 286.15ms   95.43%
-    Req/Sec     0.93k   134.95     1.21k    77.13%
-  111258 requests in 30.02s, 341.02MB read
-Requests/sec:   3705.98
-Transfer/sec:     11.36MB
+    Latency     4.00ms    1.95ms  18.44ms   85.32%
+    Req/Sec   259.46     30.43   350.00     71.43%
+  4162 requests in 4.10s, 12.76MB read
+Requests/sec:   1014.99
+Transfer/sec:      3.11MB
