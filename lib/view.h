@@ -7,11 +7,11 @@ static inline void view() {
     FILE file = fopen("outputs/unsaved", "r");
 
     if (!file) {
-        printf("No DDoS recorded yet\n");
+        printf("No load test recorded yet\n");
         return;
     }
 
-    
+
 }
 
 #endif

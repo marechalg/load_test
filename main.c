@@ -11,10 +11,10 @@
 
 #define TARGET_MAX_SIZE 1024
 
-char *MENU[4] = { "Quit", "New DDOS attack", "View last attack", "Export last attack" };
+char *MENU[4] = { "Quit", "New load test", "View last test", "Export last test" };
 enum menu_t {
     QUIT,
-    DDOS,
+    LOAD,
     VIEW,
     EXPORT
 };
@@ -45,7 +45,7 @@ int main() {
 
 enum menu_t menu() {
     int choice;
-    printf("-------- DDoS Attack --------\n");
+    printf("-------- Load Test Tool --------\n");
     printf("%d. %s\n", DDOS, MENU[DDOS]);
     printf("%d. %s\n", VIEW, MENU[VIEW]);
     printf("%d. %s\n", EXPORT, MENU[EXPORT]);
@@ -62,7 +62,7 @@ void handler(enum menu_t choice) {
             int threads, connections, time = -1;
             char target[TARGET_MAX_SIZE];
             system("clear");
-            printf("-------- DDoS Attack --------\n");
+            printf("-------- Load Test --------\n");
 
             // Verify target
             while (true) {
@@ -114,7 +114,7 @@ void handler(enum menu_t choice) {
 
         case VIEW:
             system("clear");
-            printf("-------- Last Attack --------\n");
+            printf("-------- Last Test --------\n");
             waitUser();
             break;
 
